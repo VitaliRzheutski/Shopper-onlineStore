@@ -29,7 +29,7 @@ Order.belongsToMany(Product, {
     as: 'orderId',
     unique: false
   }
-})
+}) 
 // db.sync({
 //   force: true
 // });

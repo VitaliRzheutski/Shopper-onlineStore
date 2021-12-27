@@ -16,11 +16,11 @@ const User = db.define("user", {
         },
       },
       address:{
-        type:Sequelize.STRING,
+        type:Sequelize.TEXT,
         allowNull:false
       },
       email: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         allowNull: false,
         validate: {
           isEmail: {
@@ -29,7 +29,7 @@ const User = db.define("user", {
         },
       },
       imageUrl: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         defaultValue: "https://fortmyersradon.com/wp-content/uploads/2019/12/dummy-user-img-1.png",
       },
 })
